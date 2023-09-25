@@ -1,103 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>My Personal Information</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sample</title>
+
     <style>
-        img {
-            width: 25%;
-            height: 200px;
-            margin: 8px auto;
-            padding: 20px auto;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('tag30.jpg');
-            background-size: cover;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            margin: 0;
-            padding: 0;
-        }
-
-        .info-card {
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: monospace;            
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px auto;
-            width: 80%;
+        }
+        .container, .left, .main_content, .right, nav, footer{
+            padding: 5px;
+            margin: 5px;
+            border: 3px solid;
         }
 
-        .info-card h1 {
-            color: black;
-            margin: 20px auto;
-            padding: 20px;
+        .container{
+            display: grid;
+            grid-template-columns: 200px auto 300px;
+            height: 81vh;
+            background-color: rgb(135, 7, 7);
+        }
+        .left, .main_content, .right, nav, footer{
+            background-color: rgb(83, 112, 112);
         }
 
-        .info-card p {
-            font-family: Arial;
-            font-size: 18px;
-            color: black;
-            margin: 10px;
-            text-align: left;
-        }
-
-        .info-card a {
-            font-size: 18px;
-            color: violet;
-            text-decoration: none;
-            color: darkblue;
-        }
-
-        .yes {
-            font-family: Arial, sans-serif;
-            font-size: 13px;
-            color: blue;
-            text-align: left;
-            margin: 10px;
-            padding: 10px;
+        .circular-image{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <h1>
+        PERSONAL INFORMATION
+        </h1>
+    </nav>
 
-<div class="info-card">
-    <p>
-        <img src="sky.JPG" alt="Profile Picture">
-        <h1>SHEKINAH PALENCIA RAMOS</h1>
-    </p>
+    <div class="container">
+        <div class="left">
+            <h1>HOBBIES</h1>
+            <br>
+            <h2>
+           <li>Playing online games</li>
+           <li>Watching porn</li>
+           <li>Making cross-stitch</li>
+            </h2>
+        </div>
 
-    <div class="info">
-        <h3>My Information:</h3>
-        <p>Age: 20</p>
-        <p>Sex: Female</p>
-        <p>Address: Purok Cordova, Brgy. Bocana, Ilog, Neg. Occ.</p>
-        <p>Status: Single</p>
-        <p>About Me: Married to Gojo Satoru</p>
-        <p>children: 12 </p>
-    </div>
+        <main class="main_content">
+            <img src="sky.JPG" alt="profile picture" class="circular-image">
+            <h1>SHEKINAH P. RAMOS</h1>
+            <br>
+            <h1>ABOUT ME</h1>
+            <p>Hi! I'm Sky, a 20-year-old who's into Anime, Movies, Technology, Gardening, Gaming, and Cooking.
+                I'm an adventurous and open-minded person, always up for trying new things.</p>
+            <br>
+            <h1>MY GOAL</h1>
+            <p>To finish my degree and to find happiness and fulfillment in everything I do. Striving to pursue my passions, whether it's through my hobbies, career, or personal relationships.
+            </p>
+        </main>
 
-    <div class="yes">
-        <h3>Background:</h3>
-        <p></p>
-        <h3>My Elementary Education Background:</h3>
-        <p>I graduated from Candoni Central Elementary School.</p>
-        <h3>My Secondary Education Background:</h3>
-        <p>I graduated from QGMMNHS.</p>
-        <h3>My Motto in Life:</h3>
-        <p>It is what it is.</p>
-        <h3>Contact Number:</h3>
-        <p>09129460846</p>
-        <h3>You can access me through:</h3>
-        <ul>
+        <div class="right">
+            <h1>CONTACT INFORMATION</h1>
+            <br>
+            <h2>
+            <li>Contact Number: 09129460846</li>
+            <li>Age: 20</li>
+            <li>B-date: 11/05/02</li>
+            <li>Address: Bocana, Ilog</li>
             <li><a href="https://mail.google.com/">shekinahliares@gmail.com</a></li>
             <li><a href="https://web.facebook.com/profile.php?id=100009251398097">Facebook</a></li>
             <li><a href="https://www.instagram.com/soraa_desu/">Instagram</a></li>
             <li><a href="https://www.tiktok.com/@skkyyyyyyyyyyyyyyyyyyy?lang=en">Tiktok</a></li>
-        </ul>
+            </h2>
+        </div>
     </div>
-</div>
 
+    <footer>
+        <h1>&copy; 09-25-23 Shekinah P. Ramos</h1>
+    </footer>
 </body>
 </html>
